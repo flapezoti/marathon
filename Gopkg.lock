@@ -165,22 +165,6 @@
   version = "v1.39.0"
 
 [[projects]]
-  digest = "1:33082c63746b464db3d1c2c07a1396d860484d97fe857ef9e8668a9b406db09f"
-  name = "github.com/go-redis/redis"
-  packages = [
-    ".",
-    "internal",
-    "internal/consistenthash",
-    "internal/hashtag",
-    "internal/pool",
-    "internal/proto",
-    "internal/util",
-  ]
-  pruneopts = "UT"
-  revision = "d22fde8721cc915a55aeb6b00944a76a92bfeb6e"
-  version = "v6.15.2"
-
-[[projects]]
   digest = "1:06c8168453decb3d6db47d2fcac0f58332a535631fae7e63238e481e827f5258"
   name = "github.com/golang/snappy"
   packages = ["."]
@@ -369,6 +353,17 @@
   revision = "e85f63af4302dc0e4277c6008ecf803f1d80e4f0"
 
 [[projects]]
+  digest = "1:90e282624796901d91e49c98f4a05dc4f6136d1aab7af39bd3dcf3e989273650"
+  name = "github.com/opentracing/opentracing-go"
+  packages = [
+    ".",
+    "log",
+  ]
+  pruneopts = "UT"
+  revision = "659c90643e714681897ec2521c60567dd21da733"
+  version = "v1.1.0"
+
+[[projects]]
   digest = "1:95741de3af260a92cc5c7f3f3061e85273f5a81b5db20d4bd68da74bd521675e"
   name = "github.com/pelletier/go-toml"
   packages = ["."]
@@ -489,11 +484,14 @@
   version = "v1.3.2"
 
 [[projects]]
-  digest = "1:837daeff14c020f4141513cff58e177f75926492ae02904663859a229bcbc014"
+  digest = "1:56865dc21c1c4fbef9c57686cd0a38fa00d36973a8aeecd25c1217ce3b70ffd5"
   name = "github.com/topfreegames/extensions"
   packages = [
+    "http",
     "kafka",
     "kafka/interfaces",
+    "tracing",
+    "tracing/http",
     "util",
   ]
   pruneopts = "UT"
@@ -627,7 +625,6 @@
     "github.com/aws/aws-sdk-go/service/s3/s3manager",
     "github.com/confluentinc/confluent-kafka-go/kafka",
     "github.com/getsentry/raven-go",
-    "github.com/go-redis/redis",
     "github.com/jrallison/go-workers",
     "github.com/labstack/echo",
     "github.com/labstack/echo/middleware",
@@ -642,6 +639,7 @@
     "github.com/sirupsen/logrus",
     "github.com/spf13/cobra",
     "github.com/spf13/viper",
+    "github.com/topfreegames/extensions/http",
     "github.com/topfreegames/extensions/kafka",
     "github.com/uber-go/zap",
     "github.com/valyala/fasttemplate",
